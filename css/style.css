@@ -1,0 +1,10 @@
+#div {
+  /* https://www.w3schools.com/css/css_overflow.asp*/
+  position: fixed;
+  top: 35%;
+  margin-left: 700px;
+  overflow: hidden;
+  background-color: lightslategray;
+  width: 500px; /*Largura*/
+  height: 151px; /*Altura*/
+}
