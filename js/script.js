@@ -9,8 +9,7 @@ const carHeight = 151; // Altura 151
 const coluna = 151;
 const linha = 1;
 
-//Coulna 12480 
-//linha 3020
+
 var atualizador ;
 var pos = 0;
 
@@ -18,26 +17,22 @@ var pos = 0;
 function updateFrame(inicio){
   const x = inicio;
 
-
   if(atualizador == pos){
      pos = ++pos;  
         console.log("valor do pos antes de " + pos);     
-          
-      
+                
     }else if(pos == x) {   
          clearInterval (limpa); 
       }else {
           var coluna = atualizador * carWidth ;
           img.style.marginLeft = -coluna + 'px'; // anda apenas na coluna 
         }
-          
+        //console.log("valor do pos " + pos);
   }
-  console.log("valor do pos " + pos);   
-      
-      
+              
     
-function desenhar(){  
-   
+function desenhar(){     
+  
        
  }
  var limpa = setInterval(function(){
@@ -47,7 +42,6 @@ function desenhar(){
  function atualizar(){
    desenhar();
   }
-
 
 
   function moveRight(){
@@ -81,8 +75,7 @@ function desenhar(){
     for(var i = 50; i<=75; i++){
       atualizador = i;
       updateFrame(i);
-      //testeMap();
-   console.log("valor do for " + i);
+      console.log("valor do for " + i);
     }
   }
 
