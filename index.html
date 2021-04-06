@@ -11,22 +11,35 @@
 </head>
 <body>
   
-  <button onclick="moveRight()">Direita</button>
-  <button onclick="moveLeft()">Esquerda</button>
-  <button onclick="moveUp()">Cima</button>
-  <button onclick="moveDonw()">Baixo</button>
+  <button id="btn" onclick="moveRight()">Direita</button>
+  <button id="btn" onclick="moveLeft()">Esquerda</button>
+  <button id="btn" onclick="moveUp()">Cima</button>
+  <button id="btn" onclick="moveDonw()">Baixo</button>
  
+  
    <div id="div" >
       <img id="car" src="./img/cars.png">
     </div>
 
   
 
-
-  <!-- <img id="car" src="./img/cars.png"> -->
   
+     
    <script  src="./js/script.js"></script>
-    
-  
+ 
+ 
+<div id="map"></div>
+<script>
+  function initMap() {
+    var mapDiv = document.getElementById('map');
+    var map = new google.maps.Map(mapDiv, {
+      center: {lat: -22.96226280646812, lng: -42.03204255756709},
+      zoom: 16
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+    async defer></script>
+
 </body>
 </html>
