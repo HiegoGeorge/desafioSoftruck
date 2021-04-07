@@ -51,7 +51,7 @@ function desenhar(){
    console.log("valor do for " + i);
    
     }
-    initMap(-23.962782,-46.278824)
+    initMap(-23.962782,-46.278824);
   }
   
   // Função pega apenas a posição inicial da esquerda ate a final da esquerda
@@ -62,8 +62,8 @@ function desenhar(){
       
    console.log("valor do for " + i);
     }
-  
-  initMap(-23.962701,-46.276151);
+   
+   initMap(-23.962701,-46.276151);
   }
 
   // função movimento para cima

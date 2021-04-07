@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(243, 235, 235);
+}
 #h2 {
   color: blue;
   margin-left: 13%;
@@ -21,6 +24,10 @@
   margin-left: 800px;
   border: 2px;
   padding: 1px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-left: 6;
+  overflow: hidden;
 }
 
 #map {

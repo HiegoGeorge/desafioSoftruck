@@ -6,12 +6,14 @@ var vetor = [];
 async function init(){
     try{  // Json.parse converte no formato json para que nao fique no formato de bytes, manipular os dados facilmente
       const data = JSON.parse(await fs.readFile("frontend_data_gps.json"));
+      console.log(data);
 
         // preencher vetor com os dados de lat/log e speed
       data[0].gps.forEach(termos => {
-        vetor.push(termos.latitude);
-        vetor.push(termos.longitude);        
-        vetor.push(termos.speed);
+        
+        vetor.push("latitude: "+termos.latitude);
+        vetor.push("longitude: "+termos.longitude);        
+        vetor.push("speed: "+termos.speed);
       });
 
   //  vetor.sort((a,b) => b.speed - a.speed));
@@ -29,3 +31,4 @@ async function init(){
 async function salvarDados(){
   await fs.writeFile("DadosGps.json",JSON.stringify(vetor, null, 2) );
 }
+
