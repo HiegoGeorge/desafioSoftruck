@@ -1,21 +1,30 @@
+#h2 {
+  color: blue;
+  margin-left: 13%;
+  margin-top: 50px;
+}
+
+#Dcar {
+  margin-left: 800px;
+}
 #div {
   /* https://www.w3schools.com/css/css_overflow.asp*/
   position: fixed;
   top: 35%;
   margin-left: 700px;
   overflow: hidden;
-
   width: 500px; /*Largura*/
   height: 151px; /*Altura*/
 }
 #btn {
-  border-radius: 2px;
   font-family: helvetica;
-  margin: 3px;
+  margin-left: 800px;
+  border: 2px;
   padding: 1px;
 }
 
 #map {
   margin-right: 800px;
   height: 400px;
+  margin-top: -30px;
 }

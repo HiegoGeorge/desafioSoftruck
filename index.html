@@ -10,35 +10,26 @@
   <title>Frontend 3D car</title>
 </head>
 <body>
-  
+  <h2 id="h2">Localização</h2>
+  <h2 id="Dcar">Direção do carro</h2>
+
   <button id="btn" onclick="moveRight()">Direita</button>
-  <button id="btn" onclick="moveLeft()">Esquerda</button>
-  <button id="btn" onclick="moveUp()">Cima</button>
-  <button id="btn" onclick="moveDonw()">Baixo</button>
+  <button id="btn2" onclick="moveLeft()">Esquerda</button>
+  <button id="btn3" onclick="moveUp()">Cima</button>
+  <button id="btn4" onclick="moveDonw()">Baixo</button>
  
   
    <div id="div" >
       <img id="car" src="./img/cars.png">
     </div>
+    
+  <div id="map"></div>
+    <!--
+    <label><span>Mova a direçao do carro pela barra</span> </label>
+     <input type="range"> --> 
 
-  
-
-  
-     
-   <script  src="./js/script.js"></script>
- 
- 
-<div id="map"></div>
-<script>
-  function initMap() {
-    var mapDiv = document.getElementById('map');
-    var map = new google.maps.Map(mapDiv, {
-      center: {lat: -22.96226280646812, lng: -42.03204255756709},
-      zoom: 16
-    });
-  }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+  <script  src="./js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
     async defer></script>
 
 </body>
